@@ -6,6 +6,7 @@ name: unicom_food
 on:
   watch:
     branches: [ master ]
+  workflow_dispatch:
   schedule:
     - cron: '40 0 * * *'
     # cron表达式，Actions时区是UTC时间，每天8点40执行
